@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--
+  BEFORE YOU PUBLISH
+  1. Add an image named og-image.png (1200 x 630) to the repo root, so LinkedIn shows a preview card when you share the site.
+  2. Create impressum.html and privacy.html. The footer links to them, and they are a legal requirement in Germany.
+  3. Optional: to show your photo in the hero, replace the <span class="avatar">RV</span> line with
+     <img class="avatar" src="photo.jpg" alt="" width="28" height="28">  (and add photo.jpg to the repo).
+  4. Guides section: when your first guide is live, follow the comment inside the section.
+-->
+
+<title>Ravi Kumar Vagale | Microsoft 365 Product Owner</title>
+<meta name="description" content="Ravi Kumar Vagale is a Microsoft 365 product owner and senior consultant in Berlin. Microsoft 365 administration, migrations, digital workplace and Copilot readiness.">
+<link rel="canonical" href="https://ravikumarvagale.com/">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Ravi Kumar Vagale | Microsoft 365 Product Owner">
+<meta property="og:description" content="Microsoft 365 administration, migrations, digital workplace and Copilot readiness.">
+<meta property="og:url" content="https://ravikumarvagale.com/">
+<meta property="og:image" content="https://ravikumarvagale.com/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%23f8d41f'/%3E%3Ctext x='50' y='64' font-size='42' text-anchor='middle' font-family='Georgia,serif' font-weight='700' fill='%23131313'%3ERV%3C/text%3E%3C/svg%3E">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Ravi Kumar Vagale",
+  "url": "https://ravikumarvagale.com/",
+  "jobTitle": "Microsoft 365 Product Owner",
+  "address": { "@type": "PostalAddress", "addressLocality": "Berlin", "addressCountry": "DE" },
+  "knowsAbout": ["Microsoft 365", "Microsoft Entra ID", "Conditional Access", "Microsoft Purview", "SharePoint Advanced Management", "Microsoft Intune", "PowerShell", "Microsoft 365 Copilot", "Microsoft 365 migrations", "Digital workplace"],
+  "sameAs": [
+    "https://www.linkedin.com/in/ravikumarva/",
+    "https://github.com/ravikumar-vagale"
+  ]
+}
+</script>
+
+<style>
+  :root {
+    --paper: #fafafa;
+    --surface: #ffffff;
+    --ink: #131313;
+    --muted: #5a5f66;
+    --rule: #e5e7e9;
+    --chip-bg: #f0f1f2;
+    --yellow: #f8d41f;
+    --on-yellow: #131313;
+    --sky: #d9edff;
+    --label: #1b6fa8;
+    --focus: #1b6fa8;
+
+    --lime: #d3f58d;
+    --orange: #f7955a;
+    --pink: #f8c6e0;
+    --blue: #b7d8ff;
+    --mint: #80e3b2;
+    --lav: #d9cbfb;
+    --grey: #e9eaec;
+    --on-pastel: #131313;
+
+    --serif: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+    --sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --mono: ui-monospace, "Cascadia Code", "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #111214;
+      --surface: #18191c;
+      --ink: #f2f2f3;
+      --muted: #a4a8ae;
+      --rule: #2b2d31;
+      --chip-bg: #26282c;
+      --sky: #14283a;
+      --label: #7cc4f5;
+      --focus: #7cc4f5;
+    }
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+
+  body {
+    margin: 0;
+    background: #0a0a0b;
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 1.0625rem;
+    line-height: 1.6;
+  }
+
+  a {
+    color: inherit;
+    text-decoration-color: var(--yellow);
+    text-decoration-thickness: 0.16em;
+    text-underline-offset: 0.2em;
+  }
+
+  :focus-visible {
+    outline: 3px solid var(--focus);
+    outline-offset: 3px;
+    border-radius: 6px;
+  }
+
+  .visually-hidden {
+    position: absolute !important;
+    width: 1px; height: 1px;
+    margin: -1px; padding: 0;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  .skip {
+    position: absolute;
+    left: 1rem;
+    top: -4rem;
+    background: var(--yellow);
+    color: var(--on-yellow);
+    padding: 0.6rem 1rem;
+    border-radius: 999px;
+    z-index: 40;
+  }
+  .skip:focus { top: 1rem; }
+
+  .ico {
+    width: 1.15em;
+    height: 1.15em;
+    flex: none;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  .wrap { width: min(100% - 2.5rem, 68rem); margin-inline: auto; }
+
+  .label {
+    margin: 0 0 0.45rem;
+    font-family: var(--mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--label);
+  }
+
+  /* Floating navigation */
+  .nav {
+    position: fixed;
+    inset: 0.9rem 0 auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+    z-index: 30;
+    pointer-events: none;
+  }
+  .nav > * { pointer-events: auto; }
+  .logo, .mailbtn {
+    width: 2.75rem;
+    height: 2.75rem;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    text-decoration: none;
+  }
+  .logo {
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    color: var(--ink);
+    font-family: var(--serif);
+    font-weight: 700;
+    font-size: 0.95rem;
+  }
+  .mailbtn { background: var(--yellow); color: var(--on-yellow); }
+  .mailbtn .ico { width: 1.25rem; height: 1.25rem; }
+  .mailbtn:hover { filter: brightness(1.05); }
+  .navlinks {
+    display: flex;
+    gap: 0.15rem;
+    list-style: none;
+    margin: 0;
+    padding: 0.3rem;
+    background: var(--surface);
+    background: color-mix(in srgb, var(--surface) 88%, transparent);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--rule);
+    border-radius: 999px;
+  }
+  .navlinks a {
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+    padding: 0.5rem 0.9rem;
+    border-radius: 999px;
+    color: var(--ink);
+    text-decoration: none;
+    font-size: 0.95rem;
+  }
+  .navlinks a:hover { background: var(--chip-bg); }
+
+  @media (max-width: 40rem) {
+    .navlinks a { padding: 0.6rem 0.75rem; }
+    .navlinks .t {
+      position: absolute; width: 1px; height: 1px; margin: -1px;
+      overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap;
+    }
+  }
+
+  main {
+    position: relative;
+    z-index: 1;
+    background: var(--paper);
+    border-radius: 0 0 2.5rem 2.5rem;
+    overflow: hidden;
+  }
+
+  /* Hero */
+  .hero {
+    min-height: min(100svh, 58rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 7rem 1.25rem 0;
+  }
+  .hero-main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .hello {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin: 0 0 1.5rem;
+    color: var(--muted);
+    font-size: 0.95rem;
+  }
+  .avatar {
+    display: inline-grid;
+    place-items: center;
+    width: 1.75rem;
+    height: 1.75rem;
+    border-radius: 50%;
+    background: var(--ink);
+    color: var(--paper);
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    object-fit: cover;
+  }
+
+  h1, h2, h3, .wordmark { font-family: var(--serif); font-weight: 500; }
+
+  h1 {
+    margin: 0;
+    max-width: 21ch;
+    font-size: clamp(2.35rem, 6.2vw, 4.6rem);
+    line-height: 1;
+    letter-spacing: -0.035em;
+    text-wrap: balance;
+  }
+  h1 em { font-style: italic; }
+
+  .sub {
+    max-width: 34rem;
+    margin: 1.75rem 0 2rem;
+    color: var(--muted);
+    font-size: 1.1rem;
+  }
+  .sub strong { color: var(--ink); font-weight: 600; }
+
+  .actions { display: flex; flex-wrap: wrap; gap: 0.75rem; justify-content: center; }
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.8rem 1.4rem;
+    border-radius: 999px;
+    border: 1.5px solid var(--ink);
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+    color: var(--ink);
+    background: transparent;
+  }
+  .btn.solid { background: var(--yellow); border-color: var(--yellow); color: var(--on-yellow); }
+  .btn.solid:hover { filter: brightness(1.05); }
+  .btn.ghost:hover { background: var(--chip-bg); }
+
+  /* Pile of skill pills: the one memorable moment */
+  .pile {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem 0.3rem;
+    max-width: 64rem;
+    margin: 2.5rem auto 0;
+    padding: 0 0 1.75rem;
+    list-style: none;
+  }
+  .pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55rem;
+    padding: 0.8rem 1.2rem;
+    border-radius: 999px;
+    background: var(--c);
+    color: var(--on-pastel);
+    font-family: var(--mono);
+    font-size: 0.85rem;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    rotate: var(--r);
+    transition: rotate 0.2s ease, translate 0.2s ease;
+    animation: drop 0.95s cubic-bezier(0.3, 1.35, 0.5, 1) backwards;
+    animation-delay: var(--d);
+  }
+  .pill:hover { rotate: 0deg; translate: 0 -4px; }
+  @keyframes drop {
+    from { translate: 0 -70vh; opacity: 0; rotate: calc(var(--r) * -4); }
+    35% { opacity: 1; }
+  }
+
+  @media (max-width: 40rem) {
+    .pill { padding: 0.6rem 0.9rem; font-size: 0.72rem; }
+    .pile { gap: 0.4rem 0.2rem; }
+  }
+
+  /* Sections */
+  .sec { padding-block: clamp(3.5rem, 8vw, 6rem); scroll-margin-top: 4rem; }
+  .sec-head { margin-bottom: 2.5rem; }
+  .sec-head h2 {
+    margin: 0 0 0.75rem;
+    font-size: clamp(2rem, 4.6vw, 3.2rem);
+    line-height: 1.02;
+    letter-spacing: -0.03em;
+  }
+  .sec-head p { margin: 0; max-width: 40rem; color: var(--muted); }
+
+  /* What I do: rounded cards */
+  .cards { display: grid; gap: 1rem; grid-template-columns: 1fr; }
+  @media (min-width: 48rem) {
+    .cards { grid-template-columns: repeat(6, 1fr); }
+    .card { grid-column: span 2; }
+    .card:nth-child(n + 4) { grid-column: span 3; }
+  }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: 28px;
+    padding: clamp(1.5rem, 3vw, 2rem);
+  }
+  .badge {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background: var(--c);
+    color: var(--on-pastel);
+    margin-bottom: 2.5rem;
+  }
+  .badge .ico { width: 1.5rem; height: 1.5rem; }
+  .card h3 {
+    margin: 0 0 0.75rem;
+    font-size: 1.65rem;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+  }
+  .card p { margin: 0 0 0.9rem; }
+  .card p:last-child { margin-bottom: 0; }
+  .card .tools {
+    font-family: var(--mono);
+    font-size: 0.8rem;
+    line-height: 1.5;
+    color: var(--muted);
+  }
+
+  /* Experience */
+  #experience {
+    background: linear-gradient(180deg, var(--sky) 0, transparent 24rem);
+  }
+  .role {
+    display: grid;
+    gap: 2rem;
+    padding: clamp(1.5rem, 3vw, 2.5rem);
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: 28px;
+  }
+  .role + .role { margin-top: 1rem; }
+  @media (min-width: 56rem) {
+    .role { grid-template-columns: 19rem 1fr; gap: 3.5rem; }
+  }
+  .role h3 {
+    margin: 0 0 1.5rem;
+    font-size: 1.8rem;
+    line-height: 1.08;
+    letter-spacing: -0.02em;
+  }
+  .meta { margin-bottom: 1.1rem; }
+  .chips { display: flex; flex-wrap: wrap; gap: 0.4rem; list-style: none; margin: 0; padding: 0; }
+  .chip {
+    background: var(--chip-bg);
+    color: var(--ink);
+    border-radius: 999px;
+    padding: 0.2rem 0.8rem;
+    font-size: 0.92rem;
+  }
+  .facts { margin: 0; padding-left: 1.2rem; max-width: 44rem; }
+  .facts li { margin-bottom: 0.7rem; }
+  .facts li:last-child { margin-bottom: 0; }
+
+  /* Guides (empty state, then posts) */
+  .empty {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem 2rem;
+    align-items: center;
+    padding: clamp(1.5rem, 3vw, 2.25rem);
+    border: 2px dashed var(--rule);
+    border-radius: 28px;
+  }
+  .empty .badge { margin: 0; }
+  .empty div.copy-block { flex: 1 1 20rem; }
+  .empty h3 { margin: 0 0 0.4rem; font-size: 1.65rem; line-height: 1.1; letter-spacing: -0.02em; }
+  .empty p { margin: 0; color: var(--muted); max-width: 36rem; }
+  .empty .actions { justify-content: flex-start; }
+
+  .posts { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.75rem; }
+  .post {
+    display: grid;
+    gap: 0.4rem 1.5rem;
+    padding: 1.4rem 1.6rem;
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: 24px;
+  }
+  @media (min-width: 48rem) { .post { grid-template-columns: 7rem 1fr; } }
+  .post .kind {
+    align-self: start;
+    justify-self: start;
+    font-family: var(--mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    background: var(--lime);
+    color: var(--on-pastel);
+    padding: 0.2rem 0.75rem;
+    border-radius: 999px;
+  }
+  .post h3 { margin: 0 0 0.3rem; font-size: 1.35rem; line-height: 1.2; letter-spacing: -0.01em; }
+  .post p { margin: 0; color: var(--muted); max-width: 42rem; }
+
+  /* Skills */
+  .skill-groups { display: grid; gap: 2.5rem 4rem; grid-template-columns: 1fr; }
+  @media (min-width: 48rem) { .skill-groups { grid-template-columns: 1fr 1fr; } }
+  .skill-groups h3 { margin: 0 0 1rem; font-size: 1.6rem; line-height: 1.1; letter-spacing: -0.02em; }
+  .tags { display: flex; flex-wrap: wrap; gap: 0.5rem; list-style: none; margin: 0; padding: 0; }
+  .tag {
+    padding: 0.45rem 1rem;
+    border-radius: 999px;
+    font-size: 0.97rem;
+    background: var(--c, var(--chip-bg));
+    color: var(--on-pastel);
+  }
+  .tag.plain { background: var(--surface); border: 1px solid var(--rule); color: var(--ink); }
+  .tag.mono { font-family: var(--mono); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.03em; }
+
+  /* Footer */
+  footer.site {
+    position: relative;
+    margin-top: -2.5rem;
+    padding: calc(2.5rem + clamp(3rem, 7vw, 5rem)) 0 2rem;
+    background: #0a0a0b;
+    color: #f2f2f3;
+  }
+  .foot-top {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem 2rem;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .connect { margin: 0; max-width: 24rem; font-size: 1.1rem; color: #c9ccd1; }
+  .connect strong { display: block; color: #fff; font-size: 1.25rem; font-weight: 600; }
+  .circles { display: flex; gap: 0.6rem; list-style: none; margin: 0; padding: 0; }
+  .circles a {
+    width: 3.4rem;
+    height: 3.4rem;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background: #1b1c1f;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+  }
+  .circles a:hover { background: var(--yellow); color: #131313; }
+  .circles .ico { width: 1.3rem; height: 1.3rem; }
+
+  .wordmark-wrap { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1.5rem 2rem; margin-top: clamp(3rem, 8vw, 6rem); }
+  .wordmark {
+    margin: 0;
+    font-size: clamp(2.3rem, 9.4vw, 7.5rem);
+    line-height: 1;
+    letter-spacing: -0.04em;
+    white-space: nowrap;
+    color: #fff;
+  }
+  .copy {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.85rem 1.4rem;
+    border: 0;
+    border-radius: 999px;
+    background: var(--yellow);
+    color: #131313;
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .copy:hover { filter: brightness(1.06); }
+
+  .foot-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem 2rem;
+    justify-content: space-between;
+    margin-top: 2rem;
+    color: #a3a7ad;
+    font-size: 0.9rem;
+  }
+  .foot-bottom p { margin: 0; max-width: 40rem; }
+  .foot-bottom ul { list-style: none; display: flex; gap: 1.25rem; margin: 0; padding: 0; }
+  .foot-bottom a { color: #c9ccd1; }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .pill { animation: none; transition: none; }
+  }
+</style>
+</head>
+
+<body>
+
+<!-- Icon set -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-folder" viewBox="0 0 24 24"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></symbol>
+  <symbol id="i-briefcase" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 13h18"/></symbol>
+  <symbol id="i-doc" viewBox="0 0 24 24"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4M9 12h6M9 16h6"/></symbol>
+  <symbol id="i-smile" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8.5 14c.8 1.2 2 1.8 3.5 1.8s2.7-.6 3.5-1.8M9 9.5h.01M15 9.5h.01"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+  <symbol id="i-key" viewBox="0 0 24 24"><circle cx="8" cy="15" r="4"/><path d="m11 12 8-8M16 7l3 3M14 9l2 2"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 4.5-3.2 7.8-8 9-4.8-1.2-8-4.5-8-9V6z"/><path d="m9 12 2 2 4-4"/></symbol>
+  <symbol id="i-spark" viewBox="0 0 24 24"><path d="M11 3l1.8 5.2L18 10l-5.2 1.8L11 17l-1.8-5.2L4 10l5.2-1.8zM18 16l.8 2.2L21 19l-2.2.8L18 22l-.8-2.2L15 19l2.2-.8z"/></symbol>
+  <symbol id="i-terminal" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="m7 9 3 3-3 3M12 15h5"/></symbol>
+  <symbol id="i-cloud" viewBox="0 0 24 24"><path d="M7 18a4 4 0 0 1-.6-7.96A6 6 0 0 1 18 9.5 4.3 4.3 0 0 1 17.5 18z"/><path d="M12 12v5m0-5-2 2m2-2 2 2"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6M16 5.2a3.2 3.2 0 0 1 0 5.6M18 14.3c1.8.8 3 2.6 3 4.7"/></symbol>
+  <symbol id="i-device" viewBox="0 0 24 24"><rect x="6" y="3" width="12" height="18" rx="2"/><path d="M11 18h2"/></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></symbol>
+  <symbol id="i-code" viewBox="0 0 24 24"><path d="m8 8-5 4 5 4M16 8l5 4-5 4M14 5l-4 14"/></symbol>
+  <symbol id="i-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h8"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+</svg>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav">
+  <a class="logo" href="#top" aria-label="Ravi Kumar Vagale, back to top">RV</a>
+  <nav aria-label="Main">
+    <ul class="navlinks">
+      <li><a href="#work"><svg class="ico" aria-hidden="true"><use href="#i-folder"/></svg><span class="t">What I do</span></a></li>
+      <li><a href="#experience"><svg class="ico" aria-hidden="true"><use href="#i-briefcase"/></svg><span class="t">Experience</span></a></li>
+      <li><a href="#guides"><svg class="ico" aria-hidden="true"><use href="#i-doc"/></svg><span class="t">Guides</span></a></li>
+      <li><a href="#skills"><svg class="ico" aria-hidden="true"><use href="#i-smile"/></svg><span class="t">Skills</span></a></li>
+    </ul>
+  </nav>
+  <a class="mailbtn" href="#contact" aria-label="Contact me"><svg class="ico" aria-hidden="true"><use href="#i-mail"/></svg></a>
+</header>
+
+<main id="main">
+
+  <!-- Hero -->
+  <section class="hero" id="top">
+    <div class="hero-main">
+      <p class="hello">Hello <span class="avatar" aria-hidden="true">RV</span> I'm Ravi</p>
+      <h1>I make Microsoft 365 <em>work</em>, from a 40,000+ user bank merger to Copilot readiness</h1>
+      <p class="sub">
+        Currently owning <strong>Microsoft 365</strong> for <strong>2,500 users in 75+ countries</strong>
+        and building a <strong>Copilot readiness</strong> plan.
+      </p>
+      <div class="actions">
+        <a class="btn solid" href="#experience">See my experience</a>
+        <a class="btn ghost" href="https://www.linkedin.com/in/ravikumarva/">Connect on LinkedIn</a>
+      </div>
+    </div>
+
+    <ul class="pile" aria-label="Areas I work in">
+      <li class="pill" style="--c:var(--lime);--r:-4deg;--d:.15s"><svg class="ico" aria-hidden="true"><use href="#i-key"/></svg>Entra ID</li>
+      <li class="pill" style="--c:var(--orange);--r:-12deg;--d:.3s"><svg class="ico" aria-hidden="true"><use href="#i-shield"/></svg>Conditional Access</li>
+      <li class="pill" style="--c:var(--pink);--r:3deg;--d:.45s"><svg class="ico" aria-hidden="true"><use href="#i-spark"/></svg>Copilot readiness</li>
+      <li class="pill" style="--c:var(--blue);--r:-3deg;--d:.2s"><svg class="ico" aria-hidden="true"><use href="#i-terminal"/></svg>PowerShell</li>
+      <li class="pill" style="--c:var(--mint);--r:6deg;--d:.5s"><svg class="ico" aria-hidden="true"><use href="#i-cloud"/></svg>Migrations</li>
+      <li class="pill" style="--c:var(--lav);--r:-6deg;--d:.35s"><svg class="ico" aria-hidden="true"><use href="#i-lock"/></svg>Purview and retention</li>
+      <li class="pill" style="--c:var(--yellow);--r:9deg;--d:.6s"><svg class="ico" aria-hidden="true"><use href="#i-folder"/></svg>SharePoint</li>
+      <li class="pill" style="--c:var(--grey);--r:-2deg;--d:.25s"><svg class="ico" aria-hidden="true"><use href="#i-device"/></svg>Intune</li>
+      <li class="pill" style="--c:var(--lime);--r:5deg;--d:.55s"><svg class="ico" aria-hidden="true"><use href="#i-users"/></svg>Training and adoption</li>
+    </ul>
+  </section>
+
+  <!-- What I do -->
+  <section class="sec" id="work">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>What I do</h2>
+        <p>I keep a large Microsoft 365 tenant secure, usable and ready for what comes next.</p>
+      </div>
+
+      <div class="cards">
+        <article class="card">
+          <div class="badge" style="--c:var(--yellow)"><svg class="ico" aria-hidden="true"><use href="#i-shield"/></svg></div>
+          <h3>Administration and security</h3>
+          <p>
+            Day to day ownership of identity, access, retention policies and data protection for 2,500 people working across more than 75 countries.
+            I tune the controls so security does not get in the way of work.
+          </p>
+          <p class="tools">Entra ID, Conditional Access, Microsoft Purview and retention, SharePoint Advanced Management, Intune, SSO and OAuth integrations</p>
+        </article>
+
+        <article class="card">
+          <div class="badge" style="--c:var(--blue)"><svg class="ico" aria-hidden="true"><use href="#i-cloud"/></svg></div>
+          <h3>Migrations to Microsoft 365</h3>
+          <p>
+            Planning and running moves to Microsoft 365 from Exchange on-premises, Lotus Notes, Google Workspace, Zoho Mail and cPanel,
+            in projects from 700+ users up to 40,000+.
+          </p>
+          <p class="tools">Exchange Hybrid, ADFS, BitTitan, CloudM, Quest, AzCopy</p>
+        </article>
+
+        <article class="card">
+          <div class="badge" style="--c:var(--mint)"><svg class="ico" aria-hidden="true"><use href="#i-spark"/></svg></div>
+          <h3>Copilot readiness</h3>
+          <p>
+            Getting an organisation ready for Microsoft 365 Copilot before licences are bought:
+            a pilot plan, a clear view of licensing options, and the security and data prerequisites that decide whether Copilot is safe to switch on.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="badge" style="--c:var(--pink)"><svg class="ico" aria-hidden="true"><use href="#i-users"/></svg></div>
+          <h3>Digital workplace and adoption</h3>
+          <p>
+            Moving teams to new tools and helping them use those tools well.
+            I have delivered more than 50 training sessions on Microsoft 365 workloads and I write plain language articles for users.
+          </p>
+          <p class="tools">Change management, stakeholder engagement, end user training</p>
+        </article>
+
+        <article class="card">
+          <div class="badge" style="--c:var(--lav)"><svg class="ico" aria-hidden="true"><use href="#i-terminal"/></svg></div>
+          <h3>Automation with PowerShell</h3>
+          <p>
+            Repeatable scripts for reporting, audits and bulk changes, so admin work is faster and easier to check.
+            I publish the ones I can share in the guides section below.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section class="sec" id="experience">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Experience</h2>
+        <p>More than seven years as a digital workplace consultant and Microsoft 365 administrator.</p>
+      </div>
+
+      <!--
+        Keep employer details non-confidential and get approval before naming a current client or employer.
+      -->
+
+      <article class="role">
+        <div>
+          <p class="label">Role</p>
+          <h3>Systems Administrator and Platform Product Owner</h3>
+          <div class="meta">
+            <p class="label">Employer</p>
+            <ul class="chips"><li class="chip">International non-profit, Berlin</li></ul>
+          </div>
+          <div class="meta">
+            <p class="label">Dates</p>
+            <ul class="chips"><li class="chip">Dec 2023 to present</li></ul>
+          </div>
+          <div class="meta">
+            <p class="label">Focus</p>
+            <ul class="chips">
+              <li class="chip">Platform ownership</li>
+              <li class="chip">Copilot readiness</li>
+              <li class="chip">Training</li>
+              <li class="chip">Migrations</li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <p class="label">What I do</p>
+          <ul class="facts">
+            <li>Own the Microsoft 365 platform for 2,500 users in more than 75 countries, covering administration, access policies, data protection and retention policy.</li>
+            <li>Developing a Copilot readiness plan that covers the pilot, the choice between licensing options, and the security prerequisites that must be in place first.</li>
+            <li>Delivered more than 50 user training sessions on Microsoft 365 workloads, and write articles that help users find answers on their own.</li>
+            <li>Run end to end migrations from cPanel and Google Workspace to Microsoft 365, covering Exchange Online, Teams data, SharePoint and OneDrive.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="role">
+        <div>
+          <p class="label">Role</p>
+          <h3>Digital Workplace Consultant</h3>
+          <div class="meta">
+            <p class="label">Employer</p>
+            <ul class="chips"><li class="chip">Capgemini Invent</li></ul>
+          </div>
+          <div class="meta">
+            <p class="label">Dates</p>
+            <ul class="chips"><li class="chip">Jul 2022 to Dec 2023</li></ul>
+          </div>
+          <div class="meta">
+            <p class="label">Focus</p>
+            <ul class="chips">
+              <li class="chip">Change management</li>
+              <li class="chip">Stakeholder engagement</li>
+              <li class="chip">Client delivery</li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <p class="label">What I did</p>
+          <ul class="facts">
+            <li>Developed and managed the stakeholder engagement strategy for each country or region, working with product and engineering teams and technical project managers.</li>
+            <li>Created and delivered the case for change, assessing each country or region for change readiness and the actions needed to embed the change.</li>
+            <li>Engaged clients on project delivery, and contributed to the design, development and delivery of solutions that helped them reach their business objectives.</li>
+            <li>Led project modules independently and guided analysts and associate consultants.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="role">
+        <div>
+          <p class="label">Role</p>
+          <h3>Technical Specialist, Microsoft 365</h3>
+          <div class="meta">
+            <p class="label">Employer</p>
+            <ul class="chips"><li class="chip">Noventiq (formerly Softline Services India)</li></ul>
+          </div>
+          <div class="meta">
+            <p class="label">Dates</p>
+            <ul class="chips"><li class="chip">Jul 2019 to Jun 2022</li></ul>
+          </div>
+          <div class="meta">
+            <p class="label">Focus</p>
+            <ul class="chips">
+              <li class="chip">Migrations</li>
+              <li class="chip">Exchange Hybrid</li>
+              <li class="chip">Digital workplace</li>
+              <li class="chip">IT transformation</li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <p class="label">What I did</p>
+          <ul class="facts">
+            <li>Implemented the mailing and messaging platform for the merger of nationalised banks, serving 40,000+ users. The work covered Exchange Hybrid, ADFS and ADFS Proxy, Hyper-V, self-service password reset, and migrating users from Exchange on-premises and Lotus Notes (with Quest) to Office 365.</li>
+            <li>Migrated workloads to Microsoft 365 in projects of 700+, 900+, 2,000+ and 4,000+ users, from Exchange on-premises, other Office 365 environments, PST files, Google Workspace, Zoho Mail and cPanel.</li>
+            <li>Led planning, design and implementation of digital workplace migrations, adoption and IT transformation projects, and guided users through onboarding and support.</li>
+            <li>Used BitTitan, CloudM, Quest and AzCopy, and ran bulk requests with PowerShell.</li>
+            <li>Completed 15+ major projects and worked with 30+ clients on proofs of concept and other queries, at scales from individuals to 40,000+ users.</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Guides -->
+  <section class="sec" id="guides">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Guides and scripts</h2>
+        <p>Short write-ups for Microsoft 365 admins. Each one will link to GitHub, where you can read it and copy the code.</p>
+      </div>
+
+      <!--
+        WHEN YOUR FIRST GUIDE IS LIVE
+        1. Delete the whole <div class="empty"> block below.
+        2. Paste a list like this in its place, and add one <li> per guide (newest first).
+           Use the kind "Guide", "Script" or "Article".
+
+        <ul class="posts">
+          <li class="post">
+            <span class="kind">Guide</span>
+            <div>
+              <h3><a href="PASTE-THE-GITHUB-URL-HERE">Title of the guide</a></h3>
+              <p>One sentence on what the reader will learn.</p>
+            </div>
+          </li>
+        </ul>
+      -->
+      <div class="empty">
+        <div class="badge" style="--c:var(--yellow)"><svg class="ico" aria-hidden="true"><use href="#i-doc"/></svg></div>
+        <div class="copy-block">
+          <h3>The first guides are on their way</h3>
+          <p>
+            I am preparing articles, PowerShell scripts and guides for Microsoft 365 admins.
+            They will be published on GitHub and listed here.
+          </p>
+          <div class="actions" style="margin-top:1.25rem">
+            <a class="btn solid" href="https://www.linkedin.com/in/ravikumarva/">Follow on LinkedIn</a>
+            <a class="btn ghost" href="https://github.com/ravikumar-vagale">See my GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="sec" id="skills">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Skills and certifications</h2>
+        <p>The credentials I hold and the areas I work in most.</p>
+      </div>
+
+      <div class="skill-groups">
+        <div>
+          <h3>Certifications</h3>
+          <ul class="tags">
+            <li class="tag plain">Microsoft 365 Fundamentals (MS-900)</li>
+            <li class="tag plain">Azure Fundamentals (AZ-900)</li>
+            <li class="tag plain">Azure AI Fundamentals (AI-900)</li>
+            <li class="tag plain">Google Workspace Essentials</li>
+            <li class="tag plain">Harvard ManageMentor: Change Management</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Tools and platforms</h3>
+          <ul class="tags">
+            <li class="tag mono" style="--c:var(--lime)">Microsoft 365</li>
+            <li class="tag mono" style="--c:var(--blue)">Entra ID</li>
+            <li class="tag mono" style="--c:var(--orange)">Conditional Access</li>
+            <li class="tag mono" style="--c:var(--lav)">Microsoft Purview</li>
+            <li class="tag mono" style="--c:var(--yellow)">SharePoint Advanced Management</li>
+            <li class="tag mono" style="--c:var(--grey)">Intune</li>
+            <li class="tag mono" style="--c:var(--mint)">PowerShell</li>
+            <li class="tag mono" style="--c:var(--pink)">SSO and OAuth</li>
+            <li class="tag mono" style="--c:var(--blue)">Exchange Hybrid and ADFS</li>
+            <li class="tag mono" style="--c:var(--lime)">Google Workspace</li>
+            <li class="tag mono" style="--c:var(--grey)">BitTitan, CloudM, Quest, AzCopy</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site" id="contact">
+  <div class="wrap">
+    <div class="foot-top">
+      <p class="connect">
+        <strong>Let's connect.</strong>
+        I am open to Microsoft 365, digital workplace and security roles in Berlin and across Germany.
+      </p>
+      <ul class="circles">
+        <li><a href="mailto:hello@ravikumarvagale.com" aria-label="Email me"><svg class="ico" aria-hidden="true"><use href="#i-mail"/></svg></a></li>
+        <li><a href="https://github.com/ravikumar-vagale" aria-label="GitHub"><svg class="ico" aria-hidden="true"><use href="#i-code"/></svg></a></li>
+        <li><a href="https://www.linkedin.com/in/ravikumarva/" aria-label="LinkedIn">in</a></li>
+      </ul>
+    </div>
+
+    <div class="wordmark-wrap">
+      <p class="wordmark">Ravi Kumar Vagale</p>
+      <button class="copy" id="copy-email" type="button" data-email="hello@ravikumarvagale.com">
+        <span class="lbl">Click to copy email</span>
+        <svg class="ico" aria-hidden="true"><use href="#i-copy"/></svg>
+      </button>
+      <span class="visually-hidden" id="copy-status" role="status" aria-live="polite"></span>
+    </div>
+
+    <div class="foot-bottom">
+      <p>
+        &copy; <span id="year">2026</span> Ravi Kumar Vagale. This is my personal website. The views here are my own and not those of my employer or Microsoft.
+        Microsoft 365, Copilot, Entra and PowerShell are trademarks of Microsoft.
+      </p>
+      <ul>
+        <li><a href="impressum.html">Impressum</a></li>
+        <li><a href="privacy.html">Privacy policy</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    var year = document.getElementById('year');
+    if (year) year.textContent = new Date().getFullYear();
+
+    var btn = document.getElementById('copy-email');
+    if (!btn) return;
+    var label = btn.querySelector('.lbl');
+    var status = document.getElementById('copy-status');
+    var original = label.textContent;
+    var email = btn.getAttribute('data-email');
+    var timer;
+
+    function show(text, announce) {
+      label.textContent = text;
+      status.textContent = announce || '';
+      clearTimeout(timer);
+      timer = setTimeout(function () {
+        label.textContent = original;
+        status.textContent = '';
+      }, 2400);
+    }
+
+    btn.addEventListener('click', function () {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(email).then(
+          function () { show('Copied', 'Email address copied'); },
+          function () { show(email, 'Copy failed. The email address is ' + email); }
+        );
+      } else {
+        show(email, 'Copy is not available. The email address is ' + email);
+      }
+    });
+  })();
+</script>
+
+</body>
+</html>
