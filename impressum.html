@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-de="Impressum | Ravi Kumar Vagale">Impressum | Ravi Kumar Vagale</title>
+<meta name="description" content="Legal notice for ravikumarvagale.com." data-de-content="Impressum für ravikumarvagale.com.">
+<meta name="color-scheme" content="light dark">
+<script>
+  /* Apply a saved choice before the page paints. Only reads storage; nothing is written until a toggle is clicked. */
+  (function () {
+    document.documentElement.className += ' js';
+    try {
+      var t = localStorage.getItem('rv-theme');
+      if (t === 'dark' || t === 'light') document.documentElement.setAttribute('data-theme', t);
+      if (localStorage.getItem('rv-lang') === 'de') document.documentElement.setAttribute('lang', 'de');
+    } catch (e) {}
+  })();
+</script>
+<link rel="canonical" href="https://ravikumarvagale.com/impressum.html">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%23f8d41f'/%3E%3Ctext x='50' y='64' font-size='42' text-anchor='middle' font-family='Georgia,serif' font-weight='700' fill='%23131313'%3ERV%3C/text%3E%3C/svg%3E">
+<style>
+  :root{--paper:#fafafa;--surface:#fff;--ink:#131313;--muted:#5a5f66;--rule:#e5e7e9;--chip:#f0f1f2;--yellow:#f8d41f;--on-yellow:#131313;--focus:#1b6fa8;
+    --serif:"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;
+    --sans:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
+  :root[data-theme="light"]{color-scheme:light}
+  :root[data-theme="dark"]{color-scheme:dark;--paper:#111214;--surface:#18191c;--ink:#f2f2f3;--muted:#a4a8ae;--rule:#2b2d31;--chip:#26282c;--focus:#7cc4f5;}
+  @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#111214;--surface:#18191c;--ink:#f2f2f3;--muted:#a4a8ae;--rule:#2b2d31;--chip:#26282c;--focus:#7cc4f5;}}
+  *,*::before,*::after{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:1.0625rem;line-height:1.65}
+  a{color:inherit;text-decoration-color:var(--yellow);text-decoration-thickness:.16em;text-underline-offset:.2em}
+  :focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:6px}
+  .skip{position:absolute;left:1rem;top:-4rem;background:var(--yellow);color:var(--on-yellow);padding:.6rem 1rem;border-radius:999px;z-index:10}
+  .skip:focus{top:1rem}
+  .wrap{width:min(100% - 2.5rem,46rem);margin-inline:auto}
+  header.top{padding:1rem 0;border-bottom:1px solid var(--rule)}
+  header.top .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.75rem 1.5rem}
+  header.top .right{display:flex;flex-wrap:wrap;align-items:center;gap:.6rem 1rem}
+  .switches{display:flex;gap:.6rem;align-items:center}
+  .brand{font-family:var(--serif);font-size:1.2rem;font-weight:600;text-decoration:none}
+  .back{display:inline-block;padding:.5rem 1.1rem;border:1.5px solid var(--ink);border-radius:999px;font-weight:600;font-size:.95rem;text-decoration:none}
+  .back:hover{background:var(--chip)}
+  main{padding:clamp(2.5rem,7vw,4.5rem) 0 clamp(3rem,8vw,5rem)}
+  h1{font-family:var(--serif);font-weight:500;font-size:clamp(2.2rem,6vw,3.4rem);line-height:1.05;letter-spacing:-.03em;margin:0 0 .75rem;overflow-wrap:anywhere}
+  .updated{color:var(--muted);margin:0 0 2.5rem;font-size:.95rem}
+  h2{font-family:var(--serif);font-weight:500;font-size:1.55rem;line-height:1.2;letter-spacing:-.015em;margin:2.5rem 0 .6rem}
+  p,ul{margin:0 0 1rem}
+  ul{padding-left:1.25rem}
+  li{margin-bottom:.4rem}
+  .box{background:var(--surface);border:1px solid var(--rule);border-radius:20px;padding:1.25rem 1.5rem;margin:0 0 1rem}
+  .box p{margin:0}
+  .box p + p{margin-top:.35rem}
+  footer.bottom{border-top:1px solid var(--rule);padding:1.75rem 0 2.5rem;color:var(--muted);font-size:.92rem}
+  footer.bottom .wrap{display:flex;flex-wrap:wrap;gap:.75rem 2rem;justify-content:space-between}
+  footer.bottom ul{list-style:none;display:flex;gap:1.25rem;margin:0;padding:0}
+  footer.bottom p{margin:0}
+
+  /* Theme and language toggles */
+  .toggle {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    width: 4.7rem;
+    height: 2.6rem;
+    padding: 0.2rem;
+    border-radius: 999px;
+    border: 1px solid var(--rule);
+    background: var(--surface);
+    color: var(--ink);
+    cursor: pointer;
+    font: inherit;
+  }
+  .toggle:hover { border-color: var(--muted); }
+  .toggle .thumb {
+    position: absolute;
+    top: 0.2rem;
+    bottom: 0.2rem;
+    left: 0.2rem;
+    width: calc((100% - 0.4rem) / 2);
+    border-radius: 50%;
+    background: var(--yellow);
+    transition: transform 0.22s ease;
+  }
+  .toggle[data-on="true"] .thumb { transform: translateX(100%); }
+  .toggle .opt {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    place-items: center;
+    height: 100%;
+    color: var(--muted);
+  }
+  .toggle[data-on="false"] .opt.a,
+  .toggle[data-on="true"] .opt.b { color: var(--on-yellow); }
+  .toggle .ico {
+    width: 1.2rem;
+    height: 1.2rem;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  .toggle .flag {
+    display: block;
+    width: 1.45rem;
+    height: 1.45rem;
+    border-radius: 50%;
+    transition: opacity 0.2s ease;
+  }
+  .toggle[data-on="false"] .opt.b .flag,
+  .toggle[data-on="true"] .opt.a .flag { opacity: 0.5; }
+  @media (prefers-reduced-motion: reduce) {
+    .toggle .thumb, .toggle .flag { transition: none; }
+  }
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2M12 19.5v2M4.6 4.6l1.4 1.4M18 18l1.4 1.4M2.5 12h2M19.5 12h2M4.6 19.4 6 18M18 6l1.4-1.4"/></symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20 14.2A8.3 8.3 0 1 1 9.8 4a6.6 6.6 0 0 0 10.2 10.2z"/></symbol>
+  <symbol id="f-gb" viewBox="0 0 60 30" preserveAspectRatio="xMidYMid slice">
+    <clipPath id="gb-s"><path d="M0,0 v30 h60 v-30 z"/></clipPath>
+    <clipPath id="gb-t"><path d="M30,15 h30 v15 z v15 h-30 z h-30 v-15 z v-15 h30 z"/></clipPath>
+    <g clip-path="url(#gb-s)">
+      <path d="M0,0 v30 h60 v-30 z" fill="#012169"/>
+      <path d="M0,0 L60,30 M60,0 L0,30" stroke="#ffffff" stroke-width="6" fill="none"/>
+      <path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#gb-t)" stroke="#c8102e" stroke-width="4" fill="none"/>
+      <path d="M30,0 v30 M0,15 h60" stroke="#ffffff" stroke-width="10" fill="none"/>
+      <path d="M30,0 v30 M0,15 h60" stroke="#c8102e" stroke-width="6" fill="none"/>
+    </g>
+  </symbol>
+  <symbol id="f-de" viewBox="0 0 5 3" preserveAspectRatio="xMidYMid slice">
+    <rect width="5" height="3" fill="#000000"/>
+    <rect width="5" height="2" y="1" fill="#dd0000"/>
+    <rect width="5" height="1" y="2" fill="#ffce00"/>
+  </symbol>
+</svg>
+<a class="skip" href="#main" data-de="Zum Inhalt springen">Skip to content</a>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="index.html">Ravi Kumar Vagale</a>
+    <div class="right">
+      <div class="switches">
+  <button class="toggle" id="theme-toggle" type="button" role="switch" aria-checked="false" data-on="false" aria-label="Dark mode" title="Dark mode">
+    <span class="thumb" aria-hidden="true"></span>
+    <span class="opt a" aria-hidden="true"><svg class="ico" viewBox="0 0 24 24"><use href="#i-sun"/></svg></span>
+    <span class="opt b" aria-hidden="true"><svg class="ico" viewBox="0 0 24 24"><use href="#i-moon"/></svg></span>
+  </button>
+  <button class="toggle" id="lang-toggle" type="button" data-on="false" aria-label="Language: English. Switch to German" title="Switch to German">
+    <span class="thumb" aria-hidden="true"></span>
+    <span class="opt a" aria-hidden="true"><svg class="flag" viewBox="0 0 24 24"><use href="#f-gb" width="24" height="24"/></svg></span>
+    <span class="opt b" aria-hidden="true"><svg class="flag" viewBox="0 0 24 24"><use href="#f-de" width="24" height="24"/></svg></span>
+  </button>
+</div>
+      <a class="back" href="index.html" data-de="Zurück zur Website">Back to the website</a>
+    </div>
+  </div>
+</header>
+<main id="main">
+  <div class="wrap">
+
+    <h1 data-de="Impressum">Impressum</h1>
+    <p class="updated" data-de="Stand: 18. Oktober 2026.">Last updated 18 October 2026.</p>
+
+    <!--
+      POSTAL ADDRESS
+      Section 5 of the German Digitale-Dienste-Gesetz (DDG) asks professional websites to show a postal address where court documents
+      can be served. This page has none because none was provided. To add one, put it in the box below, for example:
+      <p>Street and number</p><p>Postcode Berlin, Germany</p>  and add the same address to the privacy page.
+      A P.O. box or a pure mail-forwarding service usually does not count. A co-working space where you are present can.
+    -->
+    <h2 data-de="Verantwortlich für diese Website">Responsible for this website</h2>
+    <div class="box">
+      <p>Ravi Kumar Vagale</p>
+      <p data-de="Berlin, Deutschland">Berlin, Germany</p>
+      <p data-de="E-Mail: <a href=&quot;mailto:hello@ravikumarvagale.com&quot;>hello@ravikumarvagale.com</a>">Email: <a href="mailto:hello@ravikumarvagale.com">hello@ravikumarvagale.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/ravikumarva/">linkedin.com/in/ravikumarva</a></p>
+    </div>
+
+    <h2 data-de="Hinweise">Disclaimer</h2>
+    <p data-de="Dies ist meine persönliche Website, und die Ansichten auf ihr sind meine eigenen, nicht die meines Arbeitgebers oder von Microsoft. Produktnamen von Microsoft sind Marken der Microsoft Corporation. Für die Inhalte externer Seiten, auf die ich verlinke, bin ich nicht verantwortlich. Anleitungen und Skripte werden ohne Gewähr bereitgestellt; testen Sie sie, bevor Sie sie auf einem produktiven Tenant einsetzen.">This is my personal website, and the views on it are my own, not my employer's or Microsoft's. Microsoft product names are trademarks of Microsoft Corporation. I am not responsible for the content of external sites I link to. Guides and scripts come without warranty, so test them before using them on a live tenant.</p>
+
+  </div>
+</main>
+<footer class="bottom">
+  <div class="wrap">
+    <p>&copy; <span id="year">2026</span> Ravi Kumar Vagale</p>
+    <ul>
+      <li><a href="impressum.html" aria-current="page">Impressum</a></li>
+      <li><a href="privacy.html" data-de="Datenschutzerklärung">Privacy policy</a></li>
+    </ul>
+  </div>
+</footer>
+<script>
+  (function () {
+    'use strict';
+    var root = document.documentElement;
+    var themeBtn = document.getElementById('theme-toggle');
+    var langBtn = document.getElementById('lang-toggle');
+    var mq = window.matchMedia ? window.matchMedia('(prefers-color-scheme: dark)') : null;
+    var lang = root.getAttribute('lang') === 'de' ? 'de' : 'en';
+
+    function write(k, v) { try { window.localStorage.setItem(k, v); } catch (e) {} }
+
+    var UI = {
+      en: { theme: 'Dark mode', langLabel: 'Language: English. Switch to German', langTitle: 'Switch to German' },
+      de: { theme: 'Dunkelmodus', langLabel: 'Sprache: Deutsch. Auf Englisch wechseln', langTitle: 'Auf Englisch wechseln' }
+    };
+
+    /* Theme */
+    function currentTheme() {
+      var t = root.getAttribute('data-theme');
+      if (t === 'dark' || t === 'light') return t;
+      return (mq && mq.matches) ? 'dark' : 'light';
+    }
+    function syncTheme() {
+      if (!themeBtn) return;
+      var dark = currentTheme() === 'dark';
+      themeBtn.setAttribute('aria-checked', dark ? 'true' : 'false');
+      themeBtn.setAttribute('data-on', dark ? 'true' : 'false');
+      themeBtn.setAttribute('aria-label', UI[lang].theme);
+      themeBtn.setAttribute('title', UI[lang].theme);
+    }
+    if (themeBtn) {
+      themeBtn.addEventListener('click', function () {
+        var next = currentTheme() === 'dark' ? 'light' : 'dark';
+        root.setAttribute('data-theme', next);
+        write('rv-theme', next);
+        syncTheme();
+      });
+    }
+    if (mq) {
+      if (mq.addEventListener) mq.addEventListener('change', syncTheme);
+      else if (mq.addListener) mq.addListener(syncTheme);
+    }
+
+    /* Language: every element with data-de holds its German version; the English is captured once from the page */
+    var nodes = [].slice.call(document.querySelectorAll('[data-de]'));
+    nodes.forEach(function (n) { n.setAttribute('data-en', n.innerHTML); });
+    var labeled = [].slice.call(document.querySelectorAll('[data-de-label]'));
+    labeled.forEach(function (n) { n.setAttribute('data-en-label', n.getAttribute('aria-label') || ''); });
+    var metas = [].slice.call(document.querySelectorAll('[data-de-content]'));
+    metas.forEach(function (n) { n.setAttribute('data-en-content', n.getAttribute('content') || ''); });
+
+    function applyLang(l) {
+      lang = l;
+      nodes.forEach(function (n) {
+        var v = n.getAttribute(l === 'de' ? 'data-de' : 'data-en');
+        if (v !== null) n.innerHTML = v;
+      });
+      labeled.forEach(function (n) {
+        n.setAttribute('aria-label', n.getAttribute(l === 'de' ? 'data-de-label' : 'data-en-label'));
+      });
+      metas.forEach(function (n) {
+        n.setAttribute('content', n.getAttribute(l === 'de' ? 'data-de-content' : 'data-en-content'));
+      });
+      root.setAttribute('lang', l);
+      if (langBtn) {
+        langBtn.setAttribute('data-on', l === 'de' ? 'true' : 'false');
+        langBtn.setAttribute('aria-label', UI[l].langLabel);
+        langBtn.setAttribute('title', UI[l].langTitle);
+      }
+      syncTheme();
+      try { document.dispatchEvent(new CustomEvent('rv:lang', { detail: l })); } catch (e) {}
+    }
+    if (langBtn) {
+      langBtn.addEventListener('click', function () {
+        applyLang(lang === 'de' ? 'en' : 'de');
+        write('rv-lang', lang);
+      });
+    }
+    window.RV = { lang: function () { return lang; } };
+    applyLang(lang);
+  })();
+</script>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
